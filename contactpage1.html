@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Pyramid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 60px;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .level {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            width: 350px; /* 🔧 ขยายกรอบออกด้านข้าง */
+            animation: float 5s ease-in-out infinite;
+            transition: transform 0.3s;
+        }
+
+        .member:hover {
+            transform: scale(1.03);
+        }
+
+        .member img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #007BFF;
+        }
+
+        .member h3 {
+            margin: 0;
+            color: #007BFF;
+            font-size: 1.6rem;
+        }
+
+        .member p {
+            margin: 6px 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ติดต่อเรา</h1>
+        <div class="team">
+            <!-- ชั้นบน -->
+            <div class="level">
+                <div class="member">
+                    <img src="https://i.pinimg.com/736x/1e/80/4f/1e804f01335ad6782e52bd75cc367634.jpg" alt="ชัยยุทธ์" />
+                    <h3>ชัยยุทธ์</h3>
+                    <p>ตำแหน่ง: หัวหน้าทีม</p>
+                    <p>Email: 67319010003@loeitech.ac.th</p>
+                </div>
+            </div>
+
+            <!-- ชั้นล่าง -->
+            <div class="level">
+                <div class="member">
+                    <img src="https://i.pinimg.com/736x/1e/80/4f/1e804f01335ad6782e52bd75cc367634.jpg" alt="นัฎฐวุฒน์" />
+                    <h3>นัฎฐวุฒน์</h3>
+                    <p>ตำแหน่ง: ลูกทีม</p>
+                    <p>Email: 67319010011@loeitech.ac.th</p>
+                </div>
+                <div class="member">
+                    <img src="https://i.pinimg.com/736x/1e/80/4f/1e804f01335ad6782e52bd75cc367634.jpg" alt="คิมหันต์" />
+                    <h3>คิมหันต์</h3>
+                    <p>ตำแหน่ง: ลูกทีม</p>
+                    <p>Email: 67319010038@loeitech.ac.th</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
